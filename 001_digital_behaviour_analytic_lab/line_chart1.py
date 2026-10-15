@@ -24,3 +24,11 @@ plt.legend()
 plt.xticks(rotation=45)
 plt.savefig("001_digital_behaviour_analytic_lab/charts/Study_VS_total")
 plt.close()
+
+plt.sca(ax1)
+
+plt.title("Daily App Usage")
+plt.xlabel("Day")
+plt.ylabel("Usage")
+plt.legend()
+plt.grid(True)
