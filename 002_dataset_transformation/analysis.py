@@ -28,10 +28,6 @@ diff=study-games
 
 print("Index of max differece : ",diff.argmax())
 print("Index of min differece : ",diff.argmin())
+
+
                                             
-
-
-
-
-
-

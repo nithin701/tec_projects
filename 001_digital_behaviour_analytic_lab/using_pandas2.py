@@ -81,4 +81,10 @@ print(df[['Instagram_Minutes', 'Youtube_Minutes', 'Video_Minutes', 'Study_Minute
 
 
 app_totals = {"Instagram" : df["Instagram_Minutes"].sum(),
-              "Youtube" :df['YouTube_Minutes'].sum()}
+              "Youtube" :df['YouTube_Minutes'].sum(),
+              "whatsapp" :df['Whatsapp'].sum(),
+              "Linkdein" : df['Linkdein'].sum()}
+print(app_totals)
+print(f"app consumed the most time : {max(app_totals,key=app_totals.get)}")
+print(f" Heavy days : {df.loc[df["Study_Minutes"].idxmax()]}")
+print(f" best study day :{df.loc[df[            
